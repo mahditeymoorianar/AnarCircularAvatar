@@ -1,0 +1,16 @@
+<resources>
+    <declare-styleable name="AnarStackedAvatarsView">
+        <attr name="maxNumber" format="integer"/>
+        <attr name="size" format="dimension"/>
+        <attr name="backwardCoverage" format="dimension"/>
+        <attr name="blankSpace" format="dimension"/>
+        <attr name="defaultBackgroundImage" format="reference|color"/>
+
+        <attr name="randomBackgroundColors" format="boolean"/>
+        <attr name="randomBgColor1" format="color"/>
+        <attr name="randomBgColor2" format="color"/>
+        <attr name="randomBgColor3" format="color"/>
+        <attr name="randomBgColor4" format="color"/>
+        <attr name="randomBgColor5" format="color"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<!--    <com.teymoorianar.anar_circular_avatar_view.AnarCircularAvatarView-->
+<!--        android:id="@+id/anarCircularAvatarView3"-->
+<!--        android:layout_width="100dp"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:background="#B3ABAB"-->
+<!--        app:imageResource="@drawable/adolf_hitler_der_alte_hof"-->
+<!--        app:imageUrl="https://barbarapijan.com/bpa/Politics/HitlerAdolf_portrait.jpg"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:scaleType="fitXY" />-->
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="ltr"
+        android:orientation="horizontal">
+
+        <com.teymoorianar.anar_circular_avatar_view.AnarCircularAvatarView
+            android:id="@+id/anarCircularAvatarView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:background="#D1CBCB"
+            app:borderColor="#ADA7A7"
+            app:borderWidth="1dp"
+            app:imageResource="@drawable/adolf_hitler_der_alte_hof"
+            app:imageUrl="https://d3i6fh83elv35t.cloudfront.net/static/2023/07/2023-07-04T130617Z_252136715_RC2CW1AA3J6C_RTRMADP_3_RUSSIA-PUTIN-1200x800.jpg"
+            app:scaleType="centerCrop" />
+
+        <com.teymoorianar.anar_circular_avatar_view.AnarCircularAvatarView
+            android:id="@+id/anarCircularAvatarView2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="-30dp"
+            android:layout_weight="1"
+            android:background="#D1CBCB"
+            app:borderColor="#ADA7A7"
+            app:borderWidth="1dp"
+            app:imageResource="@drawable/adolf_hitler_der_alte_hof"
+            app:imageUrl="https://m.media-amazon.com/images/M/MV5BMTc0ODU3MDUzN15BMl5BanBnXkFtZTcwNTc0ODA4Nw@@._V1_.jpg"
+            app:scaleType="centerCrop" />
+
+        <com.teymoorianar.anar_circular_avatar_view.AnarCircularAvatarView
+            android:id="@+id/anarCircularAvatarView3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="-30dp"
+            android:layout_weight="1"
+            android:background="#D1CBCB"
+            app:borderColor="#ADA7A7"
+            app:borderWidth="1dp"
+            app:imageResource="@drawable/adolf_hitler_der_alte_hof"
+            app:imageUrl="https://www.pngitem.com/pimgs/b/122-1227298_stalin-png.png"
+            app:scaleType="fitXY" />
+
+        <com.teymoorianar.anar_circular_avatar_view.AnarCircularAvatarView
+            android:id="@+id/anarCircularAvatarView4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="-30dp"
+            android:layout_weight="1"
+            android:background="#D1CBCB"
+            app:borderColor="#ADA7A7"
+            app:borderWidth="1dp"
+            app:imageResource="@drawable/adolf_hitler_der_alte_hof"
+            app:imageUrl="https://www.famefocus.com/wp-content/uploads/2016/03/hitler-mustache-881x1161.jpg"
+            app:scaleType="fitXY" />
+
+        <com.teymoorianar.anar_circular_avatar_view.AnarCircularAvatarView
+            android:id="@+id/anarCircularAvatarView5"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginStart="-30dp"
+            android:layout_weight="1"
+            android:background="#D1CBCB"
+            app:borderColor="#ADA7A7"
+            app:borderWidth="1dp"
+            app:imageResource="@drawable/adolf_hitler_der_alte_hof"
+            app:scaleType="fitXY"
+            app:text="+3"
+            app:textSize="34sp" />
+    </LinearLayout>
+
+    <com.teymoorianar.anar_circular_avatar_view.AnarStackedAvatarsView
+        android:id="@+id/stackedAvatars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="ltr"
+        app:backwardCoverage="40dp"
+        app:blankSpace="30dp"
+        app:defaultBackgroundImage="#2E0A0A"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:maxNumber="5"
+        app:randomBackgroundColors="true"
+        app:randomBgColor1="#00ACC1"
+        app:randomBgColor2="#FFB300"
+        app:randomBgColor3="#5E35B1"
+        app:randomBgColor4="#00897B"
+        app:randomBgColor5="#D81B60"
+        app:size="90dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
