@@ -1,6 +1,23 @@
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
+    id("maven-publish")
+}
+group = "com.github.mahditeymoorianar"
+version = "1.0.0"
+
+publishing {
+    publications {
+        register<MavenPublication>("release") {
+            groupId = "com.github.teymoorianar"
+            artifactId = "anar_circular_avatar_view"
+            version = "1.0.0"
+
+            afterEvaluate {
+                from(components["release"])
+            }
+        }
+    }
 }
 
 android {
